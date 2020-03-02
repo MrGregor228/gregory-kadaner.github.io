@@ -1,0 +1,221 @@
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+/* Сброс стилей для всех браузеров */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+/* Сброс стилей для всех браузеров */
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.pt-5vh {
+  padding-top: 5vh;
+}
+
+.lh1-7 {
+  line-height: 1.7;
+}
+
+.d-inline-flex {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+.h60vh {
+  position: relative;
+  min-height: 60vh;
+  background: url("../images/section1.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: center center;  
+  z-index: 1;
+}
+
+.h60vh .text-holder {
+  line-height: 1.7;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.h60vh .text-holder h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.h60vh .text-holder p {
+  font-size: 1em;
+  color: rgb(184, 223, 255);
+}
+
+.h60vh .image-placeholder {
+  background: url("../images/me.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 7px solid white;
+  width: 195px;
+  height: 195px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.sec2 {
+  position: relative;
+  height: 100%;
+}
+
+.sec2 .heading {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sec2 .heading:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 75px;
+  background-color: rgb(219, 16, 16);
+}
+
+.sec2 .mw992px {
+  max-width: 992px !important;
+}
+
+.sec2 .mw992px:first-child {
+  padding-top: 15vh;
+}
+
+.text__divs {
+  max-width: 33%;
+  transition: max-width .3s linear;
+}
+@media screen and (max-width:992px) {
+  .text__divs {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width:576px) {
+  .text__divs {
+    max-width: 100%;
+  }
+}
+.text__divs p {
+  text-align: justify;
+  letter-spacing: 1px;
+  padding: 15px;
+  font-size: 15px;
+  white-space: wrap;
+}
+
+.text__divs h3 {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.loading-animation {
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.loading-animation .dot {
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.dot1, .dot2, .dot3 {
+  animation: loading 1s ease-in-out infinite;
+}
+.dot1{
+  animation-delay: .2s;
+} 
+.dot2{
+  animation-delay: .4s;
+} 
+.dot3{
+  animation-delay: .6s;
+} 
+
+@keyframes loading{
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 0px;
+  }
+  50% {
+    top:-10px;
+  }
+  75% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
