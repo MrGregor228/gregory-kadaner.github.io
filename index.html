@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="font/font.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Веб разработка - Домашнее задание | Gregory Kadaner</title>
 </head>
+
 <body>
     <section class="sec1 h60vh">
         <div class="text-holder">
@@ -18,33 +22,101 @@
     <section class="sec2 portfolio lh1-7">
         <div class="hobby mw992px mx-auto pt-5vh">
             <h1 class="portfolio__hobby heading">ХОББИ И ИНТЕРЕСЫ</h1>
-            <div class="hobby__text d-inline-flex">
-                <div class="text__divs">
-                    <h3>Basketball #1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium at repudiandae adipisci. Dolorem ipsam architecto at eaque dolore qui minima natus ipsum. Odio ratione voluptas provident sed similique quae a!</p>
+            <div class="hobby__text d-inline-flex justify-space-around justify-sm-center align-items-center">
+                <div class="hobby" name="volleyball">
+                    <div class="svg-handler">
+                        <i class="fas fa-volleyball-ball"></i>
+                    </div>
+                    <p>Волейболл</p>
                 </div>
-                <div class="text__divs">
-                    <h3>Volleyball #2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium at repudiandae adipisci. Dolorem ipsam architecto at eaque dolore qui minima natus ipsum. Odio ratione voluptas provident sed similique quae a!</p>
+
+                <div class="hobby" name="table-tennis">
+                    <div class="svg-handler">
+                        <i class="fas fa-table-tennis"></i>
+                    </div>
+                    <p>Теннис</p>
                 </div>
-                <div class="text__divs">
-                    <h3>Tennis #3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium at repudiandae adipisci. Dolorem ipsam architecto at eaque dolore qui minima natus ipsum. Odio ratione voluptas provident sed similique quae a!</p>
+
+                <div class="hobby" name="basketball">
+                    <div class="svg-handler">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <p>Баскетболл</p>
                 </div>
+
+                <div class="hobby" name="piano">
+                    <div class="svg-handler">
+                        <i class="fas fa-piano-keyboard"></i>
+                    </div>
+                    <p class="lchild">Игра на фортепиано</p>
+                </div>
+
+                <!-- <div class="loading-animation">
+                    <p>В процессе <span class="dot1 dot">.</span><span class="dot2 dot">.</span><span class="dot3 dot">.</span></p>
+                </div> -->
             </div>
         </div>
         <div class="education mw992px mx-auto pt-5vh">
-            <h1 class="portfolio__education heading">ОБРАЗОВАНИЕ</h1>
-            <div class="loading-animation">
-                <p>В процессе <span class="dot1 dot">.</span><span class="dot2 dot">.</span><span class="dot3 dot">.</span></p>
+            <h1 class="portfolio__education heading pt-5vh">ОБРАЗОВАНИЕ</h1>
+            <div class="d-inline-flex justify-center justify-sm-center">
+
+                <div class="education__card pt-5vh" name="volleyball">
+                    <div class="img-handler">
+                    </div>
+                    <h3 class="education__text__heading p-lg-0">Криворожская специализированная школа - Ор Авнер</h3>
+                    <p class="education__text mt-auto text-justify p-lg-0">
+                        <span>(2008 - 2019)</span>
+                        <br>
+                        <a href="https://schoolnvk.dnepredu.com/" target="_blank" class="info-links box-shadow-underlined">Детальнее &nbsp;<i class="fal fa-long-arrow-right"></i></a>
+                    </p>
+                </div>
+
+                <div class="education__card pt-5vh" name="volleyball">
+                    <div class="img-handler kei-img-handler">
+                    </div>
+                    <h3 class="education__text__heading p-lg-0">Киевский экономический институт имени Вадима Гетьмана</h3>
+                    <p class="education__text mt-auto text-justify p-lg-0">
+                        <span>(2019 - <script src="js/dateNow.js"></script>, сейчас)</span>
+                        <br>
+                        <a href="https://kneu.dp.ua/" target="_blank" class="info-links box-shadow-underlined">Детальнее &nbsp;<i class="fal fa-long-arrow-right"></i></a>
+                    </p>
+                </div>
+
             </div>
-        </div>        
+            <!-- <div class="loading-animation">
+                <p>В процессе <span class="dot1 dot">.</span><span class="dot2 dot">.</span><span class="dot3 dot">.</span></p>
+            </div> -->
+        </div>
         <div class="job-experience mw992px mx-auto pt-5vh">
             <h1 class="portfolio__job-experience heading">ОПЫТ РАБОТЫ</h1>
-            <div class="loading-animation">
-                <p>В процессе <span class="dot1 dot">.</span><span class="dot2 dot">.</span><span class="dot3 dot">.</span></p>
+            <div class="job__text d-inline-flex pt-5vh">
+                <div class="text__divs">
+                    <h3>Freelance #1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium at repudiandae adipisci.
+                        Dolorem ipsam architecto at eaque dolore qui minima natus ipsum. Odio ratione voluptas provident
+                        sed similique quae a!</p>
+                </div>
+                <div class="text__divs">
+                    <h3>IT HUB Co-working #2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium at repudiandae adipisci.
+                        Dolorem ipsam architecto at eaque dolore qui minima natus ipsum. Odio ratione voluptas provident
+                        sed similique quae a!</p>
+                </div>
+                <div class="text__divs">
+                    <h3>На дому #3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium at repudiandae adipisci.
+                        Dolorem ipsam architecto at eaque dolore qui minima natus ipsum. Odio ratione voluptas provident
+                        sed similique quae a!</p>
+                </div>
             </div>
         </div>
+        <hr class="text-slicer">
+        <div class="loading-animation mw992px mx-auto text-center">
+            <p>В процессе <span class="dot1 dot">.</span><span class="dot2 dot">.</span><span class="dot3 dot">.</span>
+            </p>
+        </div>
     </section>
+    <script src="https://ithub-test.ml/fontawesome/js/all.min.js"></script>
 </body>
+
 </html>

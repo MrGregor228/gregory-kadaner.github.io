@@ -59,6 +59,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 /* Сброс стилей для всех браузеров */
+.box-shadow-underlined {
+  box-shadow: inset 0 1.2em #fff, inset 0 1.8em rgb(226, 226, 226);
+}
+
+.info-links {
+  position: relative;
+  top: 15px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 7px;
+}
+
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
@@ -75,6 +88,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .d-inline-flex {
   display: flex;
   flex-wrap: wrap !important;
+}
+.text-center {
+  text-align: center;
+}
+@media screen and (min-width:576px) {
+  .p-lg-0 {
+    padding: 0px !important;
+  }
+}
+.p-0 {
+  padding: 0px !important;
+}
+.d-block {
+  display: block;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+
+@media screen and (max-width:576px) {
+  .justify-sm-center {
+    justify-content: center !important;
+  }
+  .justify-space-around {
+    justify-content: space-around;
+  }
+}
+
+
+.text-slicer {
+  max-width: 130px;
+  height: 2px;
+  background-color: lightgray;
+  box-shadow: none;
+  border:unset;
 }
 
 .h60vh {
@@ -131,6 +191,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
+}
+
+.education__text__heading {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+@media screen and (max-width:576px) {
+  .sec2 .heading {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .sec2 .heading:after {
@@ -138,7 +211,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   height: 3px;
   width: 75px;
-  background-color: rgb(219, 16, 16);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .sec2 .mw992px {
@@ -149,17 +223,91 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 15vh;
 }
 
-.text__divs {
+.portfolio__hobby:after {
+  background-color: green !important;
+}
+.portfolio__education:after{
+  background-color: orange;  
+}
+
+.portfolio__job-experience:after{
+  background-color: rgb(223, 0, 0);  
+}
+
+.hobby__text .hobby {
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  border-radius: 50%;
+  background-color: rgb(74, 190, 99);
+  width: 100px;
+  height: 100px;
+}
+
+.hobby__text .hobby svg {
+  color: white;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.hobby__text .hobby p {
+  text-align: center;
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+.hobby__text .hobby .lchild {
+  bottom:-57px
+}
+
+.education__card .img-handler {
+  background:url("http://schoolnvk.dnepredu.com/uploads/editor/1883/92758/sitepage_1/shkola_glavnaya.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 225px;
+  width: 100%;
+}
+
+.education__card .kei-img-handler {
+  background:url("https://krmisto.gov.ua/images/hischools/full/95_2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 225px;
+  width: 100%;  
+}
+
+.education__text {
+  margin-top: 15px;  
+}
+
+.text__divs, .education__card {
   max-width: 33%;
   transition: max-width .3s linear;
 }
+.education__card {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 @media screen and (max-width:992px) {
   .text__divs {
     max-width: 50%;
   }
+  .education__card {
+    max-width: 40%;  
+    margin-right: 15px;
+    margin-left: 15px;  
+  }
 }
 @media screen and (max-width:576px) {
   .text__divs {
+    max-width: 100%;
+  }
+  .education__card {
     max-width: 100%;
   }
 }
