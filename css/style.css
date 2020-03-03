@@ -60,7 +60,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* Сброс стилей для всех браузеров */
 .box-shadow-underlined {
-  box-shadow: inset 0 1.2em #fff, inset 0 1.8em rgb(226, 226, 226);
+  box-shadow: inset 0 1.2em #fff, inset 0 1.8em rgb(255, 218, 97);
+}
+
+.text-muted {
+  color: rgb(97, 125, 148);
+  font-weight: bold;
 }
 
 .info-links {
@@ -259,6 +264,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   bottom: -30px;
   width: 100%;
+  font-weight: bold;
 }
 .hobby__text .hobby .lchild {
   bottom:-57px
@@ -321,9 +327,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .text__divs h3 {
   font-weight: bold;
+  font-size: 19px;
   padding-top: 15px;
   padding-left: 15px;
 }
+.job__text .text__divs span {
+  background: linear-gradient(-45deg, red, darkred);
+  padding: 7px;
+  border-radius: 50%;
+  color: white;
+}
+
+.job__text .text__divs .first {
+  padding: 7px 9px;
+}
+
 
 .loading-animation {
   padding-left: 15px;
