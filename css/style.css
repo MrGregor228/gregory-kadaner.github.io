@@ -1,20 +1,89 @@
 * {
   font-family: 'Montserrat', sans-serif !important;
 }
+
 /* Сброс стилей для всех браузеров */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,7 +96,8 @@ html {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -36,17 +106,23 @@ table {
   border-spacing: 0;
 }
 
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q, blockquote {
+q,
+blockquote {
   quotes: none;
 }
 
-q:before, q:after, blockquote:before, blockquote:after {
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
@@ -55,12 +131,50 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
+
 /* Сброс стилей для всех браузеров */
 .box-shadow-underlined {
   box-shadow: inset 0 1.2em #fff, inset 0 1.8em rgb(255, 218, 97);
+}
+
+.html-color {
+  background-color: #f16529;
+  color: white;
+}
+
+.css-color {
+  background-color: #2965f1;
+  color: white;
+}
+
+.js-color {
+  background-color: #f0db4f;
+  color: #292b2c;
+}
+
+.jquery-color {
+  background-color: #0868ac;
+  color: white;
+}
+
+.scss-color {
+  background-color: #cc6699;
+  color: white;
 }
 
 .info-links {
@@ -98,8 +212,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .mx-auto {
-  margin-right: auto !important;
-  margin-left: auto !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .pt-5vh {
@@ -112,19 +226,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .d-inline-flex {
   display: flex;
-  flex-wrap: wrap !important;
+  flex-wrap: wrap;
 }
+
 .text-center {
   text-align: center;
 }
+
 @media screen and (min-width:576px) {
   .p-lg-0 {
-    padding: 0px !important;
+    padding: 0px;
   }
 }
+
 .p-0 {
-  padding: 0px !important;
+  padding: 0px;
 }
+
 .d-block {
   display: block;
 }
@@ -140,6 +258,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .justify-space-around {
   justify-content: space-around;
 }
+
 .justify-center {
   justify-content: center;
 }
@@ -148,6 +267,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .justify-sm-center {
     justify-content: center !important;
   }
+
   .justify-space-around {
     justify-content: space-around;
   }
@@ -159,7 +279,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 2px;
   background-color: lightgray;
   box-shadow: none;
-  border:unset;
+  border: unset;
 }
 
 .h60vh {
@@ -167,7 +287,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   min-height: 60vh;
   background: url("../images/section1.jpg") no-repeat fixed;
   background-size: cover;
-  background-position: center center;  
+  background-position: center center;
   z-index: 1;
 }
 
@@ -177,8 +297,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: white;
   position: absolute;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .h60vh .text-holder h1 {
@@ -201,7 +321,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 50%;
   position: absolute;
   top: 100%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
@@ -241,7 +361,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .sec2 .mw992px {
-  max-width: 992px !important;
+  max-width: 992px;
 }
 
 .sec2 .mw992px:first-child {
@@ -249,14 +369,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .portfolio__hobby:after {
-  background-color: green !important;
-}
-.portfolio__education:after{
-  background-color: orange;  
+  background-color: green;
 }
 
-.portfolio__job-experience:after{
-  background-color: rgb(223, 0, 0);  
+.portfolio__education:after {
+  background-color: orange;
+}
+
+.portfolio__job-experience:after {
+  background-color: rgb(223, 0, 0);
 }
 
 .hobby__text .hobby {
@@ -273,7 +394,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .hobby__text .hobby svg {
   color: white;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
@@ -286,12 +407,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 100%;
   font-weight: bold;
 }
+
 .hobby__text .hobby .lchild {
-  bottom:-57px
+  bottom: -57px
 }
 
 .education__card .img-handler {
-  background:url("http://schoolnvk.dnepredu.com/uploads/editor/1883/92758/sitepage_1/shkola_glavnaya.jpg") no-repeat;
+  background: url("http://schoolnvk.dnepredu.com/uploads/editor/1883/92758/sitepage_1/shkola_glavnaya.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 225px;
@@ -299,44 +421,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .education__card .kei-img-handler {
-  background:url("https://krmisto.gov.ua/images/hischools/full/95_2.jpg") no-repeat;
+  background: url("https://krmisto.gov.ua/images/hischools/full/95_2.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 225px;
-  width: 100%;  
+  width: 100%;
 }
 
 .education__text {
-  margin-top: 15px;  
+  margin-top: 15px;
 }
 
-.text__divs, .education__card {
+.text__divs,
+.education__card {
   max-width: 33%;
   transition: max-width .3s linear;
 }
+
 .education__card {
   margin-right: 30px;
   margin-left: 30px;
 }
 
-@media screen and (max-width:992px) {
-  .text__divs {
-    max-width: 50%;
-  }
-  .education__card {
-    max-width: 40%;  
-    margin-right: 15px;
-    margin-left: 15px;  
-  }
-}
-@media screen and (max-width:576px) {
-  .text__divs {
-    max-width: 100%;
-  }
-  .education__card {
-    max-width: 100%;
-  }
-}
 .text__divs p {
   text-align: justify;
   letter-spacing: 1px;
@@ -351,6 +457,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-top: 15px;
   padding-left: 15px;
 }
+
 .job__text .text__divs span {
   background: linear-gradient(-45deg, red, darkred);
   padding: 7px;
@@ -362,7 +469,138 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 7px 9px;
 }
 
+.myProjects__text {
+  flex-flow: row;
+  flex-wrap: wrap;
+}
 
+.myProjects__text .text__divs {
+  position: relative;
+  width: 33%;
+}
+
+.myProjects__text .text__divs p {
+  text-align: left;
+}
+
+.myProjects__text .text__divs .myProjects-body {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  left: 20px;
+  height: 25vh;
+  background-color: lightgray;
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: .3s linear;
+  box-shadow: 0 0 2px gray;
+}
+
+.text__divs:nth-of-type(1) .myProjects-body {
+  background-image: url('../images/1.png');
+}
+
+.text__divs:nth-of-type(2) .myProjects-body {
+  background-image: url('../images/2.png');
+}
+
+.text__divs:nth-of-type(3) .myProjects-body {
+  background-image: url('../images/3.png');
+}
+
+.text__divs:nth-of-type(4) .myProjects-body {
+  background-image: url('../images/4.png');
+}
+
+.text__divs:nth-of-type(5) .myProjects-body {
+  background-image: url('../images/5.png');
+}
+
+.text__divs:nth-of-type(1) .myProjects-text .myProjects-body h3 {
+  background-color: #ff6777;
+  color: white;
+}
+.text__divs:nth-of-type(2) .myProjects-text .myProjects-body h3 {
+  background-color: #ED4949;
+  color: white;
+}
+.text__divs:nth-of-type(3) .myProjects-text .myProjects-body h3 {
+  background-color: #ffc107;
+  
+}
+.text__divs:nth-of-type(4) .myProjects-text .myProjects-body h3 {
+  background-color: #b82b14;
+  color: white;
+}
+.text__divs:nth-of-type(5) .myProjects-text .myProjects-body h3 {
+  background-color: #292b2c;
+  color: white;
+}
+
+.myProjects__text .text__divs .myProjects-body h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0 10px;
+  font-size: 17px;
+  box-shadow: 0 0 2px gray;
+  color: black;
+}
+
+
+.myProjects__text .text__divs .myProjects-text {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  clear: both;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  background-color: #292b2c;
+  color: white;
+  width: 90%;
+  flex-basis: 1;
+  padding-top: 20px;
+  transition: .3s linear;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tag-container {
+  display: block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.tag-container span {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.myProjects__text .text__divs .myProjects-text:hover {
+  box-shadow: 2px 2px 10px gray;
+  bottom: 5px;
+}
+
+.myProjects__text .text__divs .myProjects-text:hover .myProjects-body {
+  box-shadow: 2px 2px 10px black;
+}
+
+/* Prloader animation */
 .loading-animation {
   padding-left: 15px;
   font-size: 18px;
@@ -375,33 +613,86 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 3px;
 }
 
-.dot1, .dot2, .dot3 {
+.dot1,
+.dot2,
+.dot3 {
   animation: loading 1s ease-in-out infinite;
 }
-.dot1{
-  animation-delay: .2s;
-} 
-.dot2{
-  animation-delay: .4s;
-} 
-.dot3{
-  animation-delay: .6s;
-} 
 
-@keyframes loading{
+.dot1 {
+  animation-delay: .2s;
+}
+
+.dot2 {
+  animation-delay: .4s;
+}
+
+.dot3 {
+  animation-delay: .6s;
+}
+
+@keyframes loading {
   0% {
     top: 0px;
   }
+
   25% {
     top: 0px;
   }
+
   50% {
-    top:-10px;
+    top: -10px;
   }
+
   75% {
     top: 0px;
   }
+
   100% {
     top: 0px;
+  }
+}
+
+/* Prloader animation */
+
+@media screen and (max-width:992px) {
+  .text__divs {
+    max-width: 50%;
+  }
+
+  .myProjects__text .text__divs {
+    min-width: 50%;
+  }
+
+  .education__card {
+    max-width: 40%;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .myProjects__text .text__divs .myProjects-body {
+    border-radius: 0 0 20px 20px;
+    left: 0;
+  }
+
+  .myProjects__text .text__divs .myProjects-text {
+    padding-top: 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+  .text__divs {
+    max-width: 100%;
+  }
+
+  .myProjects__text .text__divs {
+    min-width: 100%;
+  }
+
+  .education__card {
+    max-width: 100%;
   }
 }
