@@ -1,3 +1,5 @@
+// Добавление класса при нахождении совпадения в textContent
+
 let langObj = {
     html: "html-color",
     css: "css-color",
@@ -22,6 +24,8 @@ for (let i = 0; i < allSpans.length; i++) {
     }        
 }
 
+// Переадресация по клику на определённый проект
+
 let myProjects = document.querySelectorAll('.myProjects__text .text__divs .myProjects-text'),
     links = ["https://coralife-books.cf/", "https://kei-evenings.ml/", "https://ithub-coworking.com/", "https://coralife.cf/", "https://vasyl-pilka.ml/"];
 
@@ -30,4 +34,50 @@ for (let i = 0; i < myProjects.length; i++) {
     myProjects[i].addEventListener('click', function() {
         window.open(`${links[i]}`);
     });
+}
+
+// Валидация формы
+
+let emailInput = document.querySelector('input[type="email"]'),
+    nameInput = document.querySelector('input[name="Имя"]'),
+    submitButton = document.querySelector('input[type="submit"]'),
+    fieldEmail = document.querySelector('.email'),
+    fieldName = document.querySelector('.fio'),
+    form = document.querySelector('.myForm');
+
+function unfilledField(a) {
+   a.classList.add('unFilledField');
+}
+function filledField(b) {
+   b.classList.remove('unFilledField');
+}
+
+function submitButtonLock() {
+   submitButton.setAttribute('disabled','disabled');
+}
+
+function submitButtonUnblock() {
+   submitButton.removeAttribute('disabled','disabled');
+}
+
+function checkFields() {
+   if(emailInput.value.indexOf('@') == -1 || emailInput.value.length <= 5 ) {
+      unfilledField(fieldEmail);
+      submitButtonLock();
+      emailInput.placeholder = "Необходимо заполнить поле корректно!";
+   } else {
+      filledField(fieldEmail);
+      submitButtonUnblock();   
+      emailInput.placeholder = "";
+   } 
+   
+   if (nameInput.value.length <= 6) {
+       unfilledField(fieldName);
+      submitButtonLock();
+      nameInput.placeholder = "Необходимо заполнить поле корректно!";
+   } else {
+       filledField(fieldName);
+      submitButtonUnblock();
+      nameInput.placeholder = "";
+   }
 }

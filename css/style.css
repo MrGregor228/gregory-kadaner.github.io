@@ -756,6 +756,14 @@ summary {
   margin-bottom: 50px;
   color: white;
 }
+
+.sec3 .heading {
+  text-align: center;
+  width: auto;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 50px;
+}
 /* Prloader animation */
 .loading-animation {
   padding-left: 15px;
