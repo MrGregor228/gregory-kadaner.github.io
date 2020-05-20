@@ -43,7 +43,8 @@ let emailInput = document.querySelector('input[type="email"]'),
     submitButton = document.querySelector('input[type="submit"]'),
     fieldEmail = document.querySelector('.email'),
     fieldName = document.querySelector('.fio'),
-    form = document.querySelector('.myForm');
+    form = document.querySelector('.myForm'),
+    shower = document.getElementById('shower');
 
 function unfilledField(a) {
    a.classList.add('unFilledField');
@@ -80,4 +81,27 @@ function checkFields() {
       submitButtonUnblock();
       nameInput.placeholder = "";
    }
+}
+
+function hideshow() {
+	form.style.cssText="animation:hierrr 1s 1 linear;display:none;";
+	shower.style.cssText="display:block;animation:showwww 1s 1 linear;";
+}
+
+// Show modals
+let modalWindow = document.querySelector('.modal-window');
+
+function closeModal() {
+    modalWindow.style.opacity = 0 ;
+    setTimeout(function () {
+        modalWindow.style.display = "none";
+    },500);    
+}
+
+function showModal() {  
+    
+    modalWindow.style.display = "flex";
+    setTimeout(function () {
+        modalWindow.style.opacity = 1;
+    },100); 
 }

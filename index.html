@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="css/preloader.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/form.css">
+   <link rel="stylesheet" href="css/modal.css">
    <link rel="stylesheet" type="text/css" href="https://ithub-coworking.com/css/owl.carousel.min.css" />
    <link rel="stylesheet" href="https://ithub-coworking.com/css/owl.theme.default.min.css">
    <link rel="stylesheet" type="text/css"
@@ -311,64 +312,89 @@
          </div>
       </div>
    </section>
-   <section class="sec3">
-      <div class="mx-auto">
-         <h2 class="heading">ЗАКАЗАТЬ САЙТ <br> (ещё доделываю)</h2>
-      <iframe src="#" name="myFrame" frameborder="0"></iframe>
-      <form action="https://formspree.io/xknqorad" method="POST" target="myFrame" class="myForm">
-         <fieldset class="email">
-            <legend>Email <span class="required-span">*</span></legend>
-            <input type="email" name="Email" onkeyup="checkFields();" placeholder="jhonathan@gmail.com" required>
-         </fieldset>
+   <section class="sec3 text-center">
 
-         <fieldset class="fio">
-            <legend>ФИО <span class="required-span">*</span></legend>
-            <input type="text" name="Имя" onkeyup="checkFields();" placeholder="Jhonathan Doe" required>
-         </fieldset>
+      <div class="modal-window lh1-5 text-justify">
+         <div class="modal-body-content modal-dialog-scrollable">
+            <div class="close" style="cursor: pointer;" onclick="closeModal();">
+               <i class="fal fa-times"></i>
+            </div>
+            <div class="main-content">
+               <div class="mx-auto">
+                  <h2 class="heading">ЗАКАЗАТЬ САЙТ</h2>
+                  <iframe src="#" name="myFrame" frameborder="0"></iframe>
+                  <div class="w-100" id="shower">
+                     <div class="col-12 text-center">
+                        <i class="far fa-check-circle"></i>
+                     </div>
+                     <div class="col-12 text-center">
+                        <h3 class="text-submitted"><span class="green">Форма была</span> успешно отправлена!</h3>
+                     </div>
+                  </div>
+                  <form action="https://formspree.io/xknqorad" method="POST" target="myFrame" class="myForm">
+                     <fieldset class="email">
+                        <legend>Email <span class="required-span">*</span></legend>
+                        <input type="email" name="Email" onkeyup="checkFields();" placeholder="jhonathan@gmail.com"
+                           required>
+                     </fieldset>
 
-         <fieldset class="radio-buttons">
-            <legend>Выбирете тип сайта</legend>
-            <label for="radio1">
-               <input type="radio" name="type-of-website" id="radio1" value="Лендинг"> Лендинг<br>
-            </label>
+                     <fieldset class="fio">
+                        <legend>ФИО <span class="required-span">*</span></legend>
+                        <input type="text" name="Имя" onkeyup="checkFields();" placeholder="Jhonathan Doe" required>
+                     </fieldset>
 
-            <label for="radio2">
-               <input type="radio" name="type-of-website" id="radio2" value="Интернет-Магазин"> Интернет-Магазин<br>
-            </label>
+                     <fieldset class="radio-buttons">
+                        <legend>Выбирете тип сайта</legend>
+                        <label for="radio1">
+                           <input type="radio" name="type-of-website" id="radio1" value="Лендинг"> Лендинг<br>
+                        </label>
 
-            <label for="radio3">
-               <input type="radio" name="type-of-website" id="radio3" value="Сайт портфолио"> Сайт портфолио<br>
-            </label>
+                        <label for="radio2">
+                           <input type="radio" name="type-of-website" id="radio2" value="Интернет-Магазин">
+                           Интернет-Магазин<br>
+                        </label>
 
-            <label for="radio4">
-               <input type="radio" name="type-of-website" id="radio4" value="Одностраничник"> Одностраничник<br>
-            </label>
+                        <label for="radio3">
+                           <input type="radio" name="type-of-website" id="radio3" value="Сайт портфолио"> Сайт
+                           портфолио<br>
+                        </label>
 
-            <label for="radio5">
-               <input type="radio" name="type-of-website" id="radio5" value="Лендинг">
-               Другое
-               <input type="text" name="type-of-website" id="anotherOption" value=" ">
-            </label>
-         </fieldset>
-         <fieldset class="budget">
-            <legend>Какую сумму вы готовы вложить в сайт?</legend>
-            <input type="number" name="currency" max="999999" min="0" value="0">
-            <select name="currency">
-               <option value="UAH">UAH</option>
-               <option value="RUB">RUB</option>
-               <option value="USD">USD</option>
-               <option value="RUP">RUP</option>
-            </select>
-         </fieldset>
-         <input type="submit" disabled>
-      </form>
-   </div>
+                        <label for="radio4">
+                           <input type="radio" name="type-of-website" id="radio4" value="Одностраничник">
+                           Одностраничник<br>
+                        </label>
+
+                        <label for="radio5">
+                           <input type="radio" name="type-of-website" id="radio5" value="Лендинг">
+                           Другое
+                           <input type="text" name="type-of-website" id="anotherOption" value=" ">
+                        </label>
+                     </fieldset>
+                     <fieldset class="budget">
+                        <legend>Какую сумму вы готовы вложить в сайт?</legend>
+                        <input type="number" name="currency" max="999999" min="0" value="0">
+                        <select name="currency">
+                           <option value="UAH">UAH</option>
+                           <option value="RUB">RUB</option>
+                           <option value="USD">USD</option>
+                           <option value="RUP">RUP</option>
+                        </select>
+                     </fieldset>
+                     <input type="submit" onclick="hideshow();" disabled>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <button onclick="showModal();" class="make-an-order">Заказать сайт</button>
    </section>
-   <hr class="text-slicer">
-   <div class="loading-animation mw992px mx-auto text-center">
-      <p>В процессе <span class="dot1 dot">.</span><span class="dot2 dot">.</span><span class="dot3 dot">.</span>
-      </p>
-   </div>
+   <footer>
+      <hr>
+      <div class="text-center">
+         &copy; Gregory-Web <script src="js/dateNow.js"></script> | Designed up by Gregory Kadaner
+      </div>
+   </footer>
+   
    <!-- Скрипт для отображения иконок Fontawesome -->
    <script src="https://ithub-test.ml/fontawesome/js/all.min.js"></script>
    <script src="js/js.js"></script>
