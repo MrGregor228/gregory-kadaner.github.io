@@ -5,7 +5,8 @@ let langObj = {
     css: "css-color",
     js: "js-color",
     jquery: "jquery-color",
-    scss: "scss-color"
+    scss: "scss-color",
+    ajax: "ajax-color"
 };
 
 let allSpans = document.getElementsByTagName('span');
@@ -21,13 +22,15 @@ for (let i = 0; i < allSpans.length; i++) {
         allSpans[i].classList.add(langObj.jquery);
     }  else if (allSpans[i].textContent == 'scss') {
         allSpans[i].classList.add(langObj.scss);
-    }        
+    }  else if (allSpans[i].textContent == 'AJAX') {
+        allSpans[i].classList.add(langObj.ajax);
+    }         
 }
 
 // Переадресация по клику на определённый проект
 
 let myProjects = document.querySelectorAll('.myProjects__text .text__divs .myProjects-text'),
-    links = ["https://coralife-books.cf/", "https://kei-evenings.ml/", "https://ithub-coworking.com/", "https://coralife.cf/", "https://vasyl-pilka.ml/"];
+    links = ["https://coralife-books.cf/", "https://kei-evenings.ml/", "https://ithub-coworking.com/", "https://coralife.cf/", "https://vasyl-pilka.ml/", "https://gregorys-delivery-food.tk"];
 
 
 for (let i = 0; i < myProjects.length; i++) {    
