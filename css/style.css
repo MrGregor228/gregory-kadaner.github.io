@@ -149,6 +149,10 @@ summary {
 }
 
 /* Сброс стилей для всех браузеров */
+small {
+  font-size: 13px;
+  font-weight: normal;
+}
 .box-shadow-underlined {
   box-shadow: inset 0 1.2em #fff, inset 0 1.8em rgb(255, 218, 97);
 }
