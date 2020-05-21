@@ -334,11 +334,13 @@ summary {
 .h60vh .text-holder h1 {
   font-size: 3em;
   font-weight: bold;
+  transition:.2s linear;
 }
 
 .h60vh .text-holder p {
   font-size: 1em;
   color: rgb(184, 223, 255);
+  transition:.2s linear;
 }
 
 .h60vh .image-placeholder {
@@ -863,6 +865,13 @@ footer div {
 @media screen and (max-width:992px) {
   .text__divs {
     max-width: 50%;
+  }
+
+  .h60vh .text-holder h1 {
+    font-size: 2em;
+  }
+  .h60vh .text-holder p {
+    font-size: .7em;
   }
 
   .myProjects__text .text__divs {
