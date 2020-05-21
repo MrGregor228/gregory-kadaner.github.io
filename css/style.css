@@ -530,14 +530,14 @@ summary {
 
 .legend {
   position: relative;
-  width: 60px;
+  width: 75px;
   text-align: center;
-  top: 39px;
+  top: 36px;
   box-shadow: 0px 0px 0px 1px white,  0px 3px 0px 3px black ;
   height: 35px;
-  padding-top: 7px;
+  padding-top: 5px;
   padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 12px;
   color: white;
   font-weight: bold;
   border-radius: 30px;
