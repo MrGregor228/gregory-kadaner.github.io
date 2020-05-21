@@ -4,9 +4,11 @@ iframe[name="myFrame"] {
 }
 
 .myForm {
-  padding: 10px;
   max-width: 450px;
   line-height: 1.5;
+}
+.myForm h2.heading {
+  margin-top: 10px;
 }
 .myForm fieldset {
   position: relative;
