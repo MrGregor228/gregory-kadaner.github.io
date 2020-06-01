@@ -65,7 +65,7 @@ function submitButtonUnblock() {
 }
 
 function checkFields() {
-   if(emailInput.value.indexOf('@') == -1 || emailInput.value.length <= 5 ) {
+   if(emailInput.value.indexOf('@') == -1 || emailInput.value.length <= 10 || emailInput.value == '' || emailInput.value == ' ') {
       unfilledField(fieldEmail);
       submitButtonLock();
       emailInput.placeholder = "Необходимо заполнить поле корректно!";
@@ -108,3 +108,23 @@ function showModal() {
         modalWindow.style.opacity = 1;
     },100); 
 }
+
+// Block F12
+document.onkeypress = function (event) {  
+    event = (event || window.event);  
+    if (event.keyCode == 123) {  
+       return false;  
+    }  
+    }  
+    document.onmousedown = function (event) {  
+    event = (event || window.event);  
+    if (event.keyCode == 123) {  
+       return false;  
+    }  
+    }  
+    document.onkeydown = function (event) {  
+    event = (event || window.event);  
+    if (event.keyCode == 123) {  
+       return false;  
+    }  
+ };  
