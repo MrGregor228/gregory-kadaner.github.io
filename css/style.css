@@ -744,7 +744,7 @@ footer div {
 }
 .warnings {
   position: fixed;    
-  right: -350px;
+  right: -100%;
   top:0;
   height: 100%;
   max-width: 350px;
@@ -754,8 +754,12 @@ footer div {
   box-shadow: 2px 0 10px black;
   z-index: 999;
   overflow: hidden;
-  transition: .3s linear;
+  transition: .6s linear;
 }
+@media screen and (max-width:992px) {
+
+}
+
 .warnings .info-panel {
   position: relative;
   display: flex;
@@ -947,6 +951,13 @@ footer div {
 }
 
 @media screen and (max-width:576px) {
+  .warnings {
+    max-width: 100%;
+    right: -100%;
+  }
+  .warnings .info-panel {
+    max-width: 100%;
+  }
   .text__divs {
     max-width: 100%;
   }

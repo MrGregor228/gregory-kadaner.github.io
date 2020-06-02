@@ -119,7 +119,7 @@ let fisrtToast = `<div class="toast">
                         <button class="colse-toast">&times;</button>
                     </div>
                     <div class="toast-body">
-                        Во избежание плагиата, на сайте заблокированы такие сочетания клавиш как <code>F12</code>, и вызов контекстного меню (<code>ПКМ</code>)!
+                        Во избежание плагиата, на сайте заблокированы такие сочетания клавиш как <code>F12</code>, и вызов контекстного меню на мобильных устройствах и компьютерах с помощью (<code>ПКМ</code>)!
                     </div>
                   </div>`,
     warningsContainer = document.querySelector('.warnings .chat'),
@@ -136,8 +136,7 @@ document.body.addEventListener('click', function (event) {
     }
 
     if (target.closest('.info-panel button')) {
-        target.style.right = "-350px";
-        target.closest('.warnings').style.right = "-350px";
+        target.closest('.warnings').style.right = "-100%";
     }
 
 });
@@ -157,7 +156,7 @@ function showToast() {
                 <button class="colse-toast">&times;</button>
             </div>
             <div class="toast-body">
-                Во избежание плагиата, на сайте заблокированы такие сочетания клавиш как <code>F12</code>, и вызов контекстного меню (<code>ПКМ</code>)!
+                Во избежание плагиата, на сайте заблокированы такие сочетания клавиш как <code>F12</code>, и вызов контекстного меню на мобильных устройствах и компьютерах с помощью (<code>ПКМ</code>)!
             </div>
         </div>`);
         num++;
