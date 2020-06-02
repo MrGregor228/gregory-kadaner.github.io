@@ -776,7 +776,8 @@ footer div {
   align-items: center;
   flex-direction: column-reverse;
   align-items: flex-end;
-  height: 90vh;
+  height: 600px;
+  width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
 }
