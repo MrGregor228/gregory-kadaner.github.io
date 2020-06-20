@@ -141,8 +141,6 @@ document.body.addEventListener('click', function (event) {
 
 });
 
-let num = 0;
-
 function showToast() {
     let toast = document.querySelectorAll('.toast');
     warningsMainCont.style.right = "0px";
@@ -159,7 +157,6 @@ function showToast() {
                 Во избежание плагиата, на сайте заблокированы такие сочетания клавиш как <code>F12</code>, и вызов контекстного меню на мобильных устройствах и компьютерах с помощью (<code>ПКМ</code>)!
             </div>
         </div>`);
-        num++;
     }
 }
 
