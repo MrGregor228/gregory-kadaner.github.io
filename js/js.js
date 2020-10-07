@@ -162,7 +162,7 @@ function showToast() {
 
 document.onkeypress = function (event) {
     event = (event || window.event);
-    if (event.keyCode == 123) {
+    if (event.key == 123) {
         showToast();
         return false;
     }
@@ -170,7 +170,7 @@ document.onkeypress = function (event) {
 
 document.onmousedown = function (event) {
     event = (event || window.event);
-    if (event.keyCode == 123) {
+    if (event.key == 123) {
         showToast();
         return false;
     }
@@ -178,7 +178,7 @@ document.onmousedown = function (event) {
 
 document.onkeydown = function (event) {
     event = (event || window.event);
-    if (event.keyCode == 123) {
+    if (event.key == 123) {
         showToast();
         return false;
     }
